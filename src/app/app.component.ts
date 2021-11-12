@@ -6,5 +6,23 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'HolaMundo';
+  title = 'Hola Mundo';
+  toogle = true;
+
+  listEstudiantes: any[] = [
+    { nombre:'Victoria Abendaño', estado: 'No Aprobado'},
+    { nombre:'Maximiliano Abendaño', estado: 'Aprobado'},
+    { nombre:'Emilia Abendaño', estado: 'No Aprobado'},
+    { nombre:'Marco Abendaño', estado: 'Promocionado'},
+    { nombre:'Emilia Abendaño', estado: 'No Aprobado'},
+  
+
+  ];
+
+  btnToogle(): void {
+    this.toogle = !this.toogle;
+  }
+
+    
 }
+
