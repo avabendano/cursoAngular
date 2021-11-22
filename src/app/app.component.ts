@@ -11,10 +11,10 @@ export class AppComponent {
 
   listEstudiantes: any[] = [
     { nombre:'Victoria Abendaño', estado: 'No Aprobado'},
-    { nombre:'Maximiliano Abendaño', estado: 'Aprobado'},
+    { nombre:'Maximiliano Abendaño', estado: 'Promocionado'},
     { nombre:'Emilia Abendaño', estado: 'No Aprobado'},
-    { nombre:'Marco Abendaño', estado: 'Promocionado'},
-    { nombre:'Emilia Abendaño', estado: 'No Aprobado'},
+    { nombre:'Magna Godoy', estado: 'Aprobado'},
+    { nombre:'Celia Macas', estado: 'No Aprobado'},
   
 
   ];
