@@ -14,11 +14,13 @@
     <tr *ngFor="let estudiante of listEstudiantes; let i=index">
       <td>{{ i+1 }}</td>
       <td>{{ estudiante.nombre }}</td>
-      <td>{{ estudiante.estado }}</td>
+      <td [ngStyle]= "{ 'font-style': estudiante.estado === 'Aprobado' ? 'italic': 'normal' }">{{ estudiante.estado }}</td>
     </tr>
   </tbody>
 </table>
-
+<ng-template #elseBlock>
+  <h5>No hay estudiante para mostrar</h5>
+</ng-template>
 <div *ngIf="listEstudiantes.length == 0">
   <h5>No hay estuiantes para mostrar</h5>
 </div>
